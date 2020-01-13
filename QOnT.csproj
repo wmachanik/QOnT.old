@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FAEF29C-7E30-46FC-9605-D3DDFC4E4C86}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QOnT</RootNamespace>
+    <AssemblyName>QOnT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="images\animi\arrv_white.gif" />
+    <Content Include="images\animi\arr_white.gif" />
+    <Content Include="images\animi\BlueArrowsUpdate.gif" />
+    <Content Include="images\animi\img_progress.gif" />
+    <Content Include="images\animi\QuaffeeProgress.gif" />
+    <Content Include="images\icon\QonTIcon.ico" />
+    <Content Include="images\imgButtons\AddItem.gif" />
+    <Content Include="images\imgButtons\Calculator.gif" />
+    <Content Include="images\imgButtons\Calendar.gif" />
+    <Content Include="images\imgButtons\CalendarBtn.png" />
+    <Content Include="images\imgButtons\CancelItem.gif" />
+    <Content Include="images\imgButtons\Clock.gif" />
+    <Content Include="images\imgButtons\CopyItem.gif" />
+    <Content Include="images\imgButtons\CutItem.gif" />
+    <Content Include="images\imgButtons\DelItem.gif" />
+    <Content Include="images\imgButtons\EditItem.gif" />
+    <Content Include="images\imgButtons\FirstPage.gif" />
+    <Content Include="images\imgButtons\GreenPlus.gif" />
+    <Content Include="images\imgButtons\Item.gif" />
+    <Content Include="images\imgButtons\LastPage.gif" />
+    <Content Include="images\imgButtons\LockItem.gif" />
+    <Content Include="images\imgButtons\NextPage.gif" />
+    <Content Include="images\imgButtons\OpenItem.gif" />
+    <Content Include="images\imgButtons\PasteItem.gif" />
+    <Content Include="images\imgButtons\Picture.gif" />
+    <Content Include="images\imgButtons\PrevPage.gif" />
+    <Content Include="images\imgButtons\SelectItem.gif" />
+    <Content Include="images\imgButtons\Shield.gif" />
+    <Content Include="images\imgButtons\Trashcan.gif" />
+    <Content Include="images\imgButtons\UnlockItem.gif" />
+    <Content Include="images\imgButtons\UpdateItem.gif" />
+    <Content Include="images\imgButtons\Wait.gif" />
+    <Content Include="images\imgButtons\World.gif" />
+    <Content Include="images\logo\QuaffeeLogoSmall.jpg" />
+    <Content Include="images\logo\QuaffeeLogoWeb.jpg" />
+    <Content Include="Pages\BackupAndRestore.aspx" />
+    <Content Include="Pages\CoffeeRequired.aspx" />
+    <Content Include="Pages\CustomerDetails.aspx" />
+    <Content Include="Pages\Customers.aspx" />
+    <Content Include="Pages\DeleteOrderLine.aspx" />
+    <Content Include="Pages\DeliverySheet.aspx" />
+    <Content Include="Pages\Lookups.aspx" />
+    <Content Include="Pages\NewOrder.aspx" />
+    <Content Include="Pages\NewOrderDetail.aspx" />
+    <Content Include="Pages\OrderDetail.aspx" />
+    <Content Include="Pages\OrderDone.aspx" />
+    <Content Include="Pages\OrderEntry.aspx" />
+    <Content Include="Pages\OrderManagement.aspx" />
+    <Content Include="Pages\OrdersEdit.aspx" />
+    <Content Include="Pages\OrderSheet.aspx" />
+    <Content Include="Pages\PreperationSummary.aspx" />
+    <Content Include="Pages\Print.aspx" />
+    <Content Include="Pages\ReoccuringOrders.aspx" />
+    <Content Include="Pages\SendCoffeeCheckup.aspx" />
+    <Content Include="Pages\SummaryOFCoffeeRequired.aspx" />
+    <Content Include="Pages\ThisWeeksOrder.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Tools\About.aspx" />
+    <Content Include="Tools\GenMachineKeys.aspx" />
+    <Content Include="Tools\AutoClassMaker.aspx" />
+    <Content Include="Tools\MergeCustomersFromQB.aspx" />
+    <Content Include="Tools\MoveDeliveryDate.aspx" />
+    <Content Include="Tools\PrintingTblHeadersTest.htm" />
+    <Content Include="Tools\SQLCommands.xml" />
+    <Content Include="Tools\SQLCommands22.xml" />
+    <Content Include="Tools\SQLCommands23.xml" />
+    <Content Include="Tools\SQLCommandsGroupItems14Aug2017.xml" />
+    <Content Include="Tools\SystemData.aspx" />
+    <Content Include="Tools\SystemTools.aspx" />
+    <Content Include="Tools\TestPeople.aspx" />
+    <Content Include="Tools\XMLtoSQL.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Content Include="classes\CityTblData.cs" />
+    <Compile Include="classes\ContactDetails.cs" />
+    <Content Include="classes\CustomerData.cs" />
+    <Content Include="classes\CustomerTypeTblData.cs" />
+    <Content Include="classes\OrderDetail.cs" />
+    <Compile Include="classes\OrderDetailData.cs" />
+    <Content Include="classes\OrdersTblData.cs" />
+    <Content Include="classes\ReoccuringOrderTblData.cs" />
+    <Compile Include="classes\EmailCls.cs" />
+    <Content Include="classes\GeneralTrackerDbTools.cs" />
+    <Compile Include="classes\OrderDetails.cs" />
+    <Compile Include="classes\PrintHelper.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="classes\showMessageBox.cs" />
+    <Compile Include="classes\TrackerDb.cs" />
+    <Compile Include="classes\TrackerTools.cs" />
+    <Compile Include="classes\WebPrinting.cs" />
+    <Compile Include="control\ClientsToReceiveReminderQry.cs" />
+    <Compile Include="control\ClientUsageFromTempOrder.cs" />
+    <Compile Include="control\ClientUsageLinesTbl.cs" />
+    <Compile Include="control\ClientUsageTbl.cs" />
+    <Compile Include="control\CustomersTbl.cs" />
+    <Compile Include="control\CustomerSummary.cs" />
+    <Compile Include="control\CustomerTypeTbl.cs" />
+    <Compile Include="control\DeliveryItemsTbl.cs" />
+    <Compile Include="control\EquipTypeTbl.cs" />
+    <Compile Include="control\ItemTypeTbl.cs" />
+    <Compile Include="control\ItemUsageTbl.cs" />
+    <Compile Include="control\NextRoastDateByCityTbl.cs" />
+    <Compile Include="control\OrderData.cs" />
+    <Compile Include="control\OrderDBAgent.cs" />
+    <Compile Include="control\OrderHeaderData.cs" />
+    <Compile Include="control\OrderItemTbl.cs" />
+    <Compile Include="control\OrderTbl.cs" />
+    <Compile Include="control\PackagingTbl.cs" />
+    <Compile Include="control\PersonsTbl.cs" />
+    <Compile Include="control\ReoccuranceTypeTbl.cs" />
+    <Compile Include="control\ReoccuringOrderTbl.cs" />
+    <Compile Include="control\TempOrders.cs" />
+    <Compile Include="control\TempOrdersHeaderTbl.cs" />
+    <Compile Include="control\TempOrdersLinesTbl.cs" />
+    <Compile Include="control\TrackedServiceItemTbl.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BackupAndRestore.aspx.cs">
+      <DependentUpon>BackupAndRestore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BackupAndRestore.aspx.designer.cs">
+      <DependentUpon>BackupAndRestore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CoffeeRequired.aspx.cs">
+      <DependentUpon>CoffeeRequired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CoffeeRequired.aspx.designer.cs">
+      <DependentUpon>CoffeeRequired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerDetails.aspx.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerDetails.aspx.designer.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DeleteOrderLine.aspx.cs">
+      <DependentUpon>DeleteOrderLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DeleteOrderLine.aspx.designer.cs">
+      <DependentUpon>DeleteOrderLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DeliverySheet.aspx.cs">
+      <DependentUpon>DeliverySheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DeliverySheet.aspx.designer.cs">
+      <DependentUpon>DeliverySheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lookups.aspx.cs">
+      <DependentUpon>Lookups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewOrder.aspx.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewOrder.aspx.designer.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewOrderDetail.aspx.cs">
+      <DependentUpon>NewOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewOrderDetail.aspx.designer.cs">
+      <DependentUpon>NewOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderDone.aspx.cs">
+      <DependentUpon>OrderDone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderDone.aspx.designer.cs">
+      <DependentUpon>OrderDone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderEntry.aspx.cs">
+      <DependentUpon>OrderEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderEntry.aspx.designer.cs">
+      <DependentUpon>OrderEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderManagement.aspx.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderManagement.aspx.designer.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrdersEdit.aspx.cs">
+      <DependentUpon>OrdersEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrdersEdit.aspx.designer.cs">
+      <DependentUpon>OrdersEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OrderSheet.aspx.cs">
+      <DependentUpon>OrderSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OrderSheet.aspx.designer.cs">
+      <DependentUpon>OrderSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreperationSummary.aspx.cs">
+      <DependentUpon>PreperationSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PreperationSummary.aspx.designer.cs">
+      <DependentUpon>PreperationSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReoccuringOrders.aspx.cs">
+      <DependentUpon>ReoccuringOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ReoccuringOrders.aspx.designer.cs">
+      <DependentUpon>ReoccuringOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SendCoffeeCheckup.aspx.cs">
+      <DependentUpon>SendCoffeeCheckup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SummaryOFCoffeeRequired.aspx.cs">
+      <DependentUpon>SummaryOFCoffeeRequired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SummaryOFCoffeeRequired.aspx.designer.cs">
+      <DependentUpon>SummaryOFCoffeeRequired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ThisWeeksOrder.aspx.cs">
+      <DependentUpon>ThisWeeksOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ThisWeeksOrder.aspx.designer.cs">
+      <DependentUpon>ThisWeeksOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Print.Master.cs">
+      <DependentUpon>Print.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Print.Master.designer.cs">
+      <DependentUpon>Print.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\imgButtons\test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Print.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\animi\Thumbs.db" />
+    <Content Include="Pages\web.config" />
+    <Content Include="Tools\Web.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50748</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
